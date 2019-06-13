@@ -1,39 +1,39 @@
 <?xml version="1.0"?>
 <config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:module:Magento_Config:etc/system_file.xsd">
-  <system>
-    <tab id="quatro" translate="label" sortOrder="25">
-      <label>4 Olhos</label>
-    </tab>
-    <section id="quatro_rdstation" translate="label" sortOrder="130" showInDefault="1" showInWebsite="1" showInStore="1">
-        <class>QuatroOlhos-rdstaton</class>
-        <label>Configuração RD Sation</label>
-        <tab>quatro</tab>
-        <resource>QuatroOlhos_RdStation::config</resource>
-        <group id="general" translate="label" sortOrder="10" showInDefault="1" showInWebsite="1" showInStore="1">
-            <label>General</label>
-            <field id="enable" translate="label" type="select" sortOrder="1" showInDefault="1" showInWebsite="1" showInStore="1">
-                <label>Module Enable</label>
-                <source_model>Magento\Config\Model\Config\Source\Yesno</source_model>
-            </field>
-            <field id="token" translate="label" type="text" sortOrder="10" showInDefault="1" showInWebsite="1" showInStore="1">
-                <label>Token Público</label>
-            </field>
-            <field id="monitoreamento" translate="label" type="text" sortOrder="20" showInDefault="1" showInWebsite="1" showInStore="1">
-                <label>URL Codigo Monitoreamento</label>
-            </field>
-        </group>
-        <group id="identificador" translate="label" sortOrder="10" showInDefault="1" showInWebsite="1" showInStore="1">
-            <label>Eventos Conversor</label>
-            <field id="customer" translate="label" type="text" sortOrder="10" showInDefault="1" showInWebsite="1" showInStore="1">
-                <label>Nome do Evento para Cadastro Cliente</label>
-            </field>
-            <field id="compĺeted" translate="label" type="text" sortOrder="20" showInDefault="1" showInWebsite="1" showInStore="1">
-                <label>Nome do Evento para Compra</label>
-            </field>
-            <field id="abandoned" translate="label" type="text" sortOrder="20" showInDefault="1" showInWebsite="1" showInStore="1">
-                <label>Nome do Evento para Abandono de Carrinho</label>
-            </field>
-        </group>
-    </section>
-  </system>
+    <system>
+        <tab id="quatro" translate="label" sortOrder="25">
+        <label>4 Olhos</label>
+        </tab>
+        <section id="quatro_rdstation" translate="label" sortOrder="130" showInDefault="1" showInWebsite="1" showInStore="1">
+            <class>QuatroOlhos-rdstaton</class>
+            <label>Configuração RD Sation</label>
+            <tab>quatro</tab>
+            <resource>QuatroOlhos_RdStation::config</resource>
+            <group id="general" translate="label" sortOrder="10" showInDefault="1" showInWebsite="1" showInStore="1">
+                <label>General</label>
+                <field id="enable" translate="label" type="select" sortOrder="1" showInDefault="1" showInWebsite="1" showInStore="1">
+                    <label>Module Enable</label>
+                    <source_model>Magento\Config\Model\Config\Source\Yesno</source_model>
+                </field>
+                <field id="token" translate="label" type="text" sortOrder="10" showInDefault="1" showInWebsite="1" showInStore="1">
+                    <label>Token Público</label>
+                </field>
+                <field id="monitoreamento" translate="label" type="text" sortOrder="20" showInDefault="1" showInWebsite="1" showInStore="1">
+                    <label>URL Codigo Monitoreamento</label>
+                </field>
+            </group>
+            <group id="identificador" translate="label" sortOrder="10" showInDefault="1" showInWebsite="1" showInStore="1">
+                <label>Eventos Conversor</label>
+                <field id="customer" translate="label" type="text" sortOrder="10" showInDefault="1" showInWebsite="1" showInStore="1">
+                    <label>Nome do Evento para Cadastro Cliente</label>
+                </field>
+                <field id="completed" translate="label" type="text" sortOrder="20" showInDefault="1" showInWebsite="1" showInStore="1">
+                    <label>Nome do Evento para Compra</label>
+                </field>
+                <field id="abandoned" translate="label" type="text" sortOrder="20" showInDefault="1" showInWebsite="1" showInStore="1">
+                    <label>Nome do Evento para Abandono de Carrinho</label>
+                </field>
+            </group>
+        </section>
+    </system>
 </config>
