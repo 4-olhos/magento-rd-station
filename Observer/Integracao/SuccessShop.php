@@ -45,8 +45,8 @@ class SuccessShop implements ObserverInterface {
         $produtos .= $item->getName().', ';
       } 
       $data = array(
-        'token_rdstation' => $this->scopeConfig->getValue('vanguarda_news/general/token', \Magento\Store\Model\ScopeInterface::SCOPE_STORE),
-        'identificador' => $this->scopeConfig->getValue('vanguarda_rdstaton/conversor/conversor_compra', \Magento\Store\Model\ScopeInterface::SCOPE_STORE),
+        'token_rdstation' => $this->scopeConfig->getValue('quatro_rdstation/general/token', \Magento\Store\Model\ScopeInterface::SCOPE_STORE),
+        'identificador' => $this->scopeConfig->getValue('quatro_rdstation/identificador/completed', \Magento\Store\Model\ScopeInterface::SCOPE_STORE),
         'email' => $customers->getEmail(),
         'Nome' => $customers->getFirstname().' '.$customers->getLastname(),
         'Telefone' => $order->getShippingAddress()->getTelephone(),
