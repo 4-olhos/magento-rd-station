@@ -24,10 +24,6 @@ class CreateCustomer implements ObserverInterface {
     $customer = $observer->getEvent()->getCustomer();
     $nome = $customer->getFirstname().' '.$customer->getLastname();
     $email = $customer->getEmail();
-    self::send($email, $nome);
-  }
-
-  private function send($email, $nome) {
     $data = array(
       'token_rdstation' => $this->scopeConfig->getValue('quatro_rdstation/general/token', \Magento\Store\Model\ScopeInterface::SCOPE_STORE),
       'identificador' => $this->scopeConfig->getValue('quatro_rdstation/identificador/customer', \Magento\Store\Model\ScopeInterface::SCOPE_STORE),
